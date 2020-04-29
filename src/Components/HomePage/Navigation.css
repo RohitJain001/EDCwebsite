@@ -1,0 +1,13 @@
+
+nav{
+    overflow: hidden;
+    background-color: slategray;
+    height:90px;
+    position: sticky;
+}
+
+.logoNav{
+    width: 50px;
+    height : auto ;
+    padding: auto;
+}

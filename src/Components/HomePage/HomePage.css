@@ -1,0 +1,245 @@
+
+
+.BackgroundImage{
+    background:url(./Images/image.jpeg) no-repeat center center;
+    background-size: cover;
+    margin:0;
+}
+
+.logo{
+    width: 15%;
+    height : auto;
+    padding: auto;
+}
+
+header{
+    margin:0px;
+    padding-top: 0px;
+    color:rgb(207, 203, 209);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:200px;
+}
+
+/*
+background-image: url("./image.jpg");
+width: 100vw;
+height: 100vh; 
+background-size: 100% 100%;
+background-repeat: no-repeat;
+position: relative;*/
+
+.line1{
+    font-family: Nautilus Pompilius;
+    font-size: 100px;
+    color : rgb(255, 86, 56);
+}
+
+.line2{
+    margin-top: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(252, 191, 180);
+}
+
+.line3{
+    font-size: 20px;
+    font-style: oblique;
+    color: rgb(243, 233, 94);
+}
+
+.boltImage{
+    border-radius: 100%;
+    height: 60px;
+    align-self: center;
+    
+}
+
+.NavigateToDown{
+    align-self: center;
+    text-align: center;
+    
+    padding-bottom: 100px;
+}
+
+
+.headingaboutus{
+    font-family: Nautilus Pompilius;
+    font-size: 50px;
+    color:rgb(252, 137, 6);
+    text-decoration: underline;
+    border-bottom :3px;
+    padding:5px
+}
+
+
+
+.aboutus{
+    padding:30px;
+    border:5px;
+    text-align: justify;
+    text-indent: 0pc;
+}
+
+.articleAboutUs{
+    text-indent: 1px;;
+    width: 500px;
+    
+    margin: 50px 60px;
+    border-radius: 5px;
+    box-shadow: 5px, 10px;
+}
+
+.homepage2{
+    color:white;
+    background-color: rgb(10, 10, 10);
+    margin :0;
+    padding: 30px;
+    text-align: center;
+}
+
+.allEvents{
+    margin:0;
+    color: rgb(241, 227, 206);
+    background-color: rgb(185, 182, 182);
+    text-align: center;
+    background-image: url('./Images/events.jpg');
+    background-size: cover;
+    padding: 200px auto;
+}
+
+
+.ourEventsHeading{
+    font-size: 75px;
+    font-weight:bold;
+    font-family: Nautilus Pompilius;
+    padding: 6px;
+    margin: 0px;
+    color: rgb(247, 231, 2);
+}
+
+
+
+
+button{
+    border-radius: 100%;
+}
+
+.eventbox{
+    margin: 5em auto;
+    color:red;
+    border: 5px solid black;
+    position:relative;
+    width:28em;
+    height:28em;
+    float :left;
+    margin: 50px 10%;
+    line-height:10em;
+    background-color: lightyellow;
+    overflow:hidden;
+}
+
+
+.eventImage{
+    width:100%;
+}
+
+Carousel{
+    z-index:1;
+}
+
+CountUp{
+    font-size:100px;
+    font-family: Nautilus Pompilius;
+    color: red;
+    text-align: center;
+    padding : 50px;
+}
+
+.countNumberBlock{
+    border :3px;
+    font-size: 55px;
+    color: rgb(157, 255, 0);
+    font-family: Nautilus Pompilius;
+    padding : 100px 20px;
+    margin: auto;
+    display: inline-block;
+}
+
+.countNumberHeading{
+    font-size:30px;
+}
+
+.contactUs{
+    background-color:rgb(180, 168, 180);
+    padding-bottom: 500px;
+    margin: 0;
+    margin-top: 1380px;
+}
+
+.contactUsHeading{
+    font-size: 70px;
+    font-weight:bold;
+    font-family: Nautilus Pompilius;
+    padding: 6px;
+    
+    color: rgb(103, 5, 112);
+}
+
+.icons{
+    border-radius:100%;
+    width:30px;
+    height:auto;
+    display: block;
+    padding:25px;
+    background-color:rgb(131, 122, 122);
+    margin-left:45%;
+}
+
+.contactUsDiv{
+    float :left;
+}
+
+#contactUsDiv1{
+    width:60%;
+    
+}
+
+#contactUsDiv2{
+    width:40%;
+    padding-left:60px;
+    border-left: 4px solid rgb(187, 255, 0);
+    padding-top: 20px;
+
+}
+
+.edcLogoDown{
+    width:150px;
+    margin-top:40px;
+    background-color:rgb(10, 164, 253);
+    height: auto;
+}
+
+#h3{
+    font-family: Nautilus Pompilius;
+    text-transform: capitalize;
+    text-align: center;
+    color:rgb(59, 51, 51);
+    font-weight:bold;
+}
+
+.contactdetails{
+    color: rgb(168, 103, 4);
+    font-family: Nautilus Pompilius;
+    font-size: 20px;
+    padding:20px;
+    margin:0;
+}
+
+footer{
+    background-color:rgb(255, 251, 251);
+    font-size:15px;
+    margin:0;
+    color:black;
+    padding:20px;
+}

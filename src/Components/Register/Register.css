@@ -1,0 +1,11 @@
+.loginForm{
+    background: url('../Images/signupBackground.jpg') no-repeat center center fixed; 
+    background-size: cover;
+   }
+   
+  
+   .registerForm {
+       margin: 12%; 
+       background-color: white; 
+       
+   }

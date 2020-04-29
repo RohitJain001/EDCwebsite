@@ -1,0 +1,223 @@
+//@import "compass/css3";
+
+.box{
+    margin: 5em auto;
+    color:red;
+    border: 5px solid black;
+    position:relative;
+    width:28em;
+    height:28em;
+    float :left;
+    margin: 50px 10%;
+    line-height:10em;
+    background-color: lightyellow;
+    overflow:hidden;
+  } 
+
+  .ourMentorsHeading{
+    color: rgb(9, 85, 250);
+    font-family: Nautilus Pompilius;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    padding:6px;
+    margin-top:10px;
+}
+  
+  %box__dir{
+    position:absolute;
+    width:inherit;
+    height:inherit;
+    font-size: 20px;
+    
+    text-align:center;
+    line-height:inherit;
+    
+    transition:transform .3s ease;
+    
+    &:before{
+      position:absolute;
+        
+      content:'';
+       /*
+        * Calculation:
+        *      ____a____
+        *    /|\        |
+        *   b | \       |
+        *  /  a  \      |
+        *  \  |  /      |
+        *   \ | /       |
+        *    \|/________|
+        *
+        *  a^2 = b^2+b^2
+        *
+        *  solve to b:
+        *
+        *  a^2         = 2b^2 | /2  
+        *  a^2 / 2     =  b^2 | sqrt
+        *  a / sqrt(2) =  b
+        *
+        * Percentage: 
+        * a = 100%
+        * 100 / sqrt(2) = 70.71%
+        *                 ------
+        */
+      width:70.71%;
+      height:70.71%;
+      transform: rotate(45deg);
+    }  
+    
+    &:hover{
+      transform:translateX(0);
+      z-index:1;
+        }
+      
+    &:hover:before{
+      width:100%;
+      height:100%;
+      transform: none;  
+    }  
+  }
+  
+  .box__right{
+     @extend %box__dir;
+     background:rgb(196, 196, 189);
+     transform:translateX(100%);
+     z-index: 1;
+    
+     &:before{   
+        right:100%;bottom:0;
+        transform-origin: 100% 100%;
+     }
+     
+     &:hover ~ .box__center{
+       transform:translateX(-100%); 
+       //z-index: -1;  
+     }
+  } 
+  
+  .box__left{
+     @extend %box__dir;
+     z-index: 1;
+     background:rgb(196, 196, 189);
+     transform:translateX(-100%);
+    
+     &:before{   
+        left:100%;
+        transform-origin: 0 0;  
+     }   
+      
+     &:hover ~ .box__center{
+       transform:translateX(100%);
+       z-index: -1;
+     }
+  }
+  
+  .box__top{
+     @extend %box__dir;
+     background:rgb(196, 196, 189);
+     transform:translateY(-100%);
+     z-index: 1;
+    
+     &:before{   
+        top:100%;right:0;
+        transform-origin:100% 0; 
+     }
+      
+     &:hover ~ .box__center{
+       transform:translateY(100%);
+       z-index: 1;   
+     }
+  }
+  
+  
+  .box__bottom{
+     @extend %box__dir;
+     background:rgb(196, 196, 189);
+     transform:translateY(100%);
+     z-index: 1;
+    
+     &:before{   
+        bottom:100%;left:0;
+        transform-origin:0 100%;
+     }
+      
+     &:hover ~ .box__center{
+       transform:translateY(-100%); 
+       z-index: 1;  
+     }
+  }
+  
+  .box__center1{
+     @extend %box__dir;
+     
+     background-image: url('./Images/mandeep.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     //z-index:-1;
+  }
+
+  .box__center2{
+    @extend %box__dir;
+    background-image: url('./Images/karun.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .box__center3{
+     @extend %box__dir;
+     background-image: url('./Images/maneek.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     //z-index:-1;
+  }
+
+  .box__center4{
+    @extend %box__dir;
+    background-image: url('./Images/karminder.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    //z-index:-1;
+ }
+  
+  /* Some booring css*/
+  html,
+  body{
+    height:100%;
+  }
+  
+  body{  
+    font-family:Helvetica, sans-serif;
+    transform:translateZ(0);
+  }
+  
+  h1{
+    text-align:center;
+  }
+  
+  footer{
+    text-align:center;
+    font-size:8pt;
+    color:gray;
+  }
+  
+  a{
+    color: rgb(235, 66, 66);  
+  }
+  
+  a:hover{
+    color: lightgray;
+  }
+  
+  .ourMentors{
+      float: left;
+      margin: 0px;
+      background-color: rgb(2, 2, 2);
+      width: 100%;
+      color: white;
+  }
+
+SocialIcon{
+  margin:10px;
+}
+

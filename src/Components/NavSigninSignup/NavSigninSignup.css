@@ -1,0 +1,11 @@
+#navSigninSignup{
+    overflow: auto;
+    background-color: slategray;
+    height:90px;
+}
+
+.logoNav{
+    width: 50px;
+    height : auto ;
+    padding-left: 30px;
+}
